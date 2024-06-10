@@ -1,2 +1,2 @@
 #!/bin/bash
-[ "$(stat -c '%U' hello)" = "guillaume" ] && chown vincent hello
+useradd guillaume || true; [ "$(ls -ld hello | awk '{print $3}')" = "guillaume" ] && sudo chown vincent hello
