@@ -1,2 +1,2 @@
 #!/bin/bash
-addgroup  betty hello 
+su -c "chown betty hello" 
