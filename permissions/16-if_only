@@ -1,2 +1,2 @@
 #!/bin/bash
-adduser vincent & [ "$(stat -c '%U' hello)" = "guillaume" ] & chown vincent hello
+[ "$(stat -c '%U' hello)" = "guillaume" ] & chown vincent hello
